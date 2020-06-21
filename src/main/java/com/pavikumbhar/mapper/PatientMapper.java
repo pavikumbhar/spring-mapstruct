@@ -26,7 +26,7 @@ public interface PatientMapper {
 	PatientDto toDto(Patient patient);
 	
 	@Mapping(source = "dateOfBirth", target = "dateOfBirth", dateFormat = "dd/MMM/yyyy")
-	 @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE,
+	@BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE,
 	  nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)
 	void updateEntity(PatientDto patientDto, @MappingTarget Patient patient);
 	 
