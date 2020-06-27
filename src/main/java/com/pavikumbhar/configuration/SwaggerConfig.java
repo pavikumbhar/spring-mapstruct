@@ -26,7 +26,7 @@ public class SwaggerConfig {
     @Value("${application.formatted-version:development}")
     private String version;
 
-    @Value("${application.title:MqttApplication}")
+    @Value("${application.title:SpringMapstructApplication}")
     private String title;
 
     @Bean
